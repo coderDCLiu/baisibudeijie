@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="dCP-b2-7sa" customClass="LDCAllCellTopView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="j7X-oW-8eh">
+                    <rect key="frame" x="10" y="10" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="1aZ-uf-2am"/>
+                        <constraint firstAttribute="width" constant="40" id="Ymf-Jh-Ire"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tpc-Pu-cec">
+                    <rect key="frame" x="60" y="10" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lo7-ip-fpL">
+                    <rect key="frame" x="60" y="32" width="38" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="csh-7l-5pN">
+                    <rect key="frame" x="10" y="60" width="355" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="deo-Sa-cug">
+                    <rect key="frame" x="341" y="10" width="24" height="22"/>
+                    <state key="normal" image="cellmorebtnnormal"/>
+                    <state key="highlighted" image="cellmorebtnclick"/>
+                    <connections>
+                        <action selector="moreClick:" destination="dCP-b2-7sa" eventType="touchUpInside" id="QC8-XF-rhb"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="csh-7l-5pN" firstAttribute="leading" secondItem="dCP-b2-7sa" secondAttribute="leading" constant="10" id="EXG-CW-epf"/>
+                <constraint firstItem="lo7-ip-fpL" firstAttribute="bottom" secondItem="j7X-oW-8eh" secondAttribute="bottom" id="H2L-f9-E7z"/>
+                <constraint firstItem="Tpc-Pu-cec" firstAttribute="leading" secondItem="j7X-oW-8eh" secondAttribute="trailing" constant="10" id="HOL-UX-WG3"/>
+                <constraint firstAttribute="trailing" secondItem="deo-Sa-cug" secondAttribute="trailing" constant="10" id="Yux-Mk-CJl"/>
+                <constraint firstItem="j7X-oW-8eh" firstAttribute="top" secondItem="dCP-b2-7sa" secondAttribute="top" constant="10" id="ciQ-ES-Pty"/>
+                <constraint firstItem="deo-Sa-cug" firstAttribute="top" secondItem="dCP-b2-7sa" secondAttribute="top" constant="10" id="e3K-Nc-5xY"/>
+                <constraint firstItem="Tpc-Pu-cec" firstAttribute="top" secondItem="j7X-oW-8eh" secondAttribute="top" id="le3-4a-X0K"/>
+                <constraint firstItem="lo7-ip-fpL" firstAttribute="leading" secondItem="j7X-oW-8eh" secondAttribute="trailing" constant="10" id="p4A-Dv-YyM"/>
+                <constraint firstAttribute="trailing" secondItem="csh-7l-5pN" secondAttribute="trailing" constant="10" id="sXR-hJ-2MM"/>
+                <constraint firstItem="j7X-oW-8eh" firstAttribute="leading" secondItem="dCP-b2-7sa" secondAttribute="leading" constant="10" id="sZL-ct-2tU"/>
+                <constraint firstItem="csh-7l-5pN" firstAttribute="top" secondItem="j7X-oW-8eh" secondAttribute="bottom" constant="10" id="wEh-1t-RGN"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="createTimeLabel" destination="lo7-ip-fpL" id="FXL-wZ-iAf"/>
+                <outlet property="iconImageView" destination="j7X-oW-8eh" id="bKv-eD-3tp"/>
+                <outlet property="nameLabel" destination="Tpc-Pu-cec" id="mKX-EN-d42"/>
+                <outlet property="textLabel" destination="csh-7l-5pN" id="7b5-yG-NQ7"/>
+            </connections>
+            <point key="canvasLocation" x="454.5" y="-7"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="cellmorebtnclick" width="24" height="20"/>
+        <image name="cellmorebtnnormal" width="24" height="20"/>
+    </resources>
+</document>

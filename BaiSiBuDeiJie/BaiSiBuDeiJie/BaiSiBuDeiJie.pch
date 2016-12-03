@@ -1,0 +1,32 @@
+//
+//  BaiSiBuDeiJie.pch
+//  BaiSiBuDeiJie
+//
+//  Created by 刘冬城 on 16/10/17.
+//  Copyright © 2016年 刘冬城. All rights reserved.
+//
+
+#ifndef BaiSiBuDeiJie_pch
+#define BaiSiBuDeiJie_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* BaiSiBuDeiJie_pch */
+
+
+#import "UIBarButtonItem+Item.h"
+#import "UIView+Frame.h"
+
+#import "AFHTTPSessionManager+Manager.h"
+
+#define LDCBaseUrl @"http://api.budejie.com/api/api_open.php"
+#define cachePath [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES)firstObject]
+
+#define LDCScreenW [UIScreen mainScreen].bounds.size.width
+#define LDCScreenH [UIScreen mainScreen].bounds.size.height
+
+#define iPhone6P (LDCScreenH == 736)
+#define iPhone6 (LDCScreenH == 667)
+#define iPhone5 (LDCScreenH == 568)
+#define iPhone4 (LDCScreenH == 480)
