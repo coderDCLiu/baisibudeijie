@@ -11,10 +11,9 @@
 
 #import "LDCEssenceController.h"
 #import "LDCNewController.h"
-#import "LDCPublishController.h"
 #import "LDCFreindTrendController.h"
 #import "LDCMeController.h"
-#import "XQWriteViewController.h"
+#import "LDCWriteViewController.h"
 
 #import "UIImage+Render.h"
 #import "UIView+Frame.h"
@@ -26,7 +25,7 @@
 
 @property (strong, nonatomic) UIViewController *selectedVC;
 
-@property (nonatomic, strong) XQWriteViewController *writeVC;
+@property (nonatomic, strong) LDCWriteViewController *writeVC;
 
 @end
 
@@ -90,7 +89,7 @@
 //添加按钮点击
 - (void)addBtnClick {
     
-    XQWriteViewController *writeVC = [[XQWriteViewController alloc] init];
+    LDCWriteViewController *writeVC = [[LDCWriteViewController alloc] init];
     self.writeVC = writeVC;
     __weak typeof(self) weakSelf = self;
     writeVC.closeTask = ^{
@@ -124,9 +123,8 @@
     [self addChildViewController:ldcNav2];
     
     //发布
-//    LDCPublishController *ldcPC = [[LDCPublishController alloc]init];
-//    [self addChildViewController:ldcPC];
-    XQWriteViewController *writeVC = [[XQWriteViewController alloc]init];
+
+    LDCWriteViewController *writeVC = [[LDCWriteViewController alloc]init];
     [self addChildViewController:writeVC];
 //    XQWriteViewController *writeVC = [[XQWriteViewController alloc] init];
     self.writeVC = writeVC;

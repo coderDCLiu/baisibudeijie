@@ -18,8 +18,6 @@
 		000006691DC73E7C0083BF5A /* UIImage+Render.m in Sources */ = {isa = PBXBuildFile; fileRef = 000006611DC73E7C0083BF5A /* UIImage+Render.m */; };
 		0000066A1DC73E7C0083BF5A /* UITextField+PlaceholderColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 000006631DC73E7C0083BF5A /* UITextField+PlaceholderColor.m */; };
 		0000066B1DC73E7C0083BF5A /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 000006651DC73E7C0083BF5A /* UIView+Frame.m */; };
-		00010E851DF197630037471A /* XQCenterTitleBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 00010E841DF197630037471A /* XQCenterTitleBtn.m */; };
-		00010E881DF197860037471A /* XQWriteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00010E871DF197860037471A /* XQWriteViewController.m */; };
 		00274E721DB8BD3600701771 /* LDCSubTagItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 00274E711DB8BD3600701771 /* LDCSubTagItem.m */; };
 		00274E761DB8C13300701771 /* LDCSubTagTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 00274E741DB8C13300701771 /* LDCSubTagTableViewCell.m */; };
 		00274E771DB8C13300701771 /* LDCSubTagTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00274E751DB8C13300701771 /* LDCSubTagTableViewCell.xib */; };
@@ -34,7 +32,6 @@
 		003B70421DB2563C00F92980 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 003B70401DB2563C00F92980 /* LaunchScreen.storyboard */; };
 		003B706B1DB25BAF00F92980 /* LDCEssenceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 003B706A1DB25BAF00F92980 /* LDCEssenceController.m */; };
 		003B706E1DB25BC100F92980 /* LDCNewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 003B706D1DB25BC100F92980 /* LDCNewController.m */; };
-		003B70711DB25BD800F92980 /* LDCPublishController.m in Sources */ = {isa = PBXBuildFile; fileRef = 003B70701DB25BD800F92980 /* LDCPublishController.m */; };
 		003B70741DB25BF300F92980 /* LDCFreindTrendController.m in Sources */ = {isa = PBXBuildFile; fileRef = 003B70731DB25BF300F92980 /* LDCFreindTrendController.m */; };
 		003B70771DB25C0300F92980 /* LDCMeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 003B70761DB25C0300F92980 /* LDCMeController.m */; };
 		003B707A1DB25CD000F92980 /* LDCTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 003B70791DB25CD000F92980 /* LDCTabBarController.m */; };
@@ -92,6 +89,8 @@
 		00CD5B6B1DBE422800AFB2AA /* LDCBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00CD5B6A1DBE422800AFB2AA /* LDCBaseViewController.m */; };
 		00E391F31DC2520E00797E9E /* LDCSeeBigPictureController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E391F11DC2520E00797E9E /* LDCSeeBigPictureController.m */; };
 		00E391F41DC2520E00797E9E /* LDCSeeBigPictureController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00E391F21DC2520E00797E9E /* LDCSeeBigPictureController.xib */; };
+		00E3C0C61DF2C8E100EE0B98 /* LDCCenterTitleBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E3C0C51DF2C8E100EE0B98 /* LDCCenterTitleBtn.m */; };
+		00E3C0C91DF2C98900EE0B98 /* LDCWriteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E3C0C81DF2C98900EE0B98 /* LDCWriteViewController.m */; };
 		00E4AD371DC1937200FAE7C9 /* LDCAllCellCommentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E4AD361DC1937200FAE7C9 /* LDCAllCellCommentView.m */; };
 		00E4AD391DC193A600FAE7C9 /* LDCAllCellCommentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00E4AD381DC193A600FAE7C9 /* LDCAllCellCommentView.xib */; };
 		00E4AD3C1DC19C3700FAE7C9 /* LDCTopicCommentItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E4AD3B1DC19C3700FAE7C9 /* LDCTopicCommentItem.m */; };
@@ -127,10 +126,6 @@
 		000006631DC73E7C0083BF5A /* UITextField+PlaceholderColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+PlaceholderColor.m"; sourceTree = "<group>"; };
 		000006641DC73E7C0083BF5A /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
 		000006651DC73E7C0083BF5A /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
-		00010E831DF197630037471A /* XQCenterTitleBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XQCenterTitleBtn.h; sourceTree = "<group>"; };
-		00010E841DF197630037471A /* XQCenterTitleBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XQCenterTitleBtn.m; sourceTree = "<group>"; };
-		00010E861DF197860037471A /* XQWriteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XQWriteViewController.h; sourceTree = "<group>"; };
-		00010E871DF197860037471A /* XQWriteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XQWriteViewController.m; sourceTree = "<group>"; };
 		00274E701DB8BD3600701771 /* LDCSubTagItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDCSubTagItem.h; sourceTree = "<group>"; };
 		00274E711DB8BD3600701771 /* LDCSubTagItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDCSubTagItem.m; sourceTree = "<group>"; };
 		00274E731DB8C13300701771 /* LDCSubTagTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDCSubTagTableViewCell.h; sourceTree = "<group>"; };
@@ -156,8 +151,6 @@
 		003B706A1DB25BAF00F92980 /* LDCEssenceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDCEssenceController.m; sourceTree = "<group>"; };
 		003B706C1DB25BC100F92980 /* LDCNewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDCNewController.h; sourceTree = "<group>"; };
 		003B706D1DB25BC100F92980 /* LDCNewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDCNewController.m; sourceTree = "<group>"; };
-		003B706F1DB25BD800F92980 /* LDCPublishController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDCPublishController.h; sourceTree = "<group>"; };
-		003B70701DB25BD800F92980 /* LDCPublishController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDCPublishController.m; sourceTree = "<group>"; };
 		003B70721DB25BF300F92980 /* LDCFreindTrendController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDCFreindTrendController.h; sourceTree = "<group>"; };
 		003B70731DB25BF300F92980 /* LDCFreindTrendController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDCFreindTrendController.m; sourceTree = "<group>"; };
 		003B70751DB25C0300F92980 /* LDCMeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDCMeController.h; sourceTree = "<group>"; };
@@ -249,6 +242,10 @@
 		00E391F01DC2520E00797E9E /* LDCSeeBigPictureController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDCSeeBigPictureController.h; sourceTree = "<group>"; };
 		00E391F11DC2520E00797E9E /* LDCSeeBigPictureController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDCSeeBigPictureController.m; sourceTree = "<group>"; };
 		00E391F21DC2520E00797E9E /* LDCSeeBigPictureController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LDCSeeBigPictureController.xib; sourceTree = "<group>"; };
+		00E3C0C41DF2C8E100EE0B98 /* LDCCenterTitleBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDCCenterTitleBtn.h; sourceTree = "<group>"; };
+		00E3C0C51DF2C8E100EE0B98 /* LDCCenterTitleBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDCCenterTitleBtn.m; sourceTree = "<group>"; };
+		00E3C0C71DF2C98900EE0B98 /* LDCWriteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDCWriteViewController.h; sourceTree = "<group>"; };
+		00E3C0C81DF2C98900EE0B98 /* LDCWriteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDCWriteViewController.m; sourceTree = "<group>"; };
 		00E4AD351DC1937200FAE7C9 /* LDCAllCellCommentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDCAllCellCommentView.h; sourceTree = "<group>"; };
 		00E4AD361DC1937200FAE7C9 /* LDCAllCellCommentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDCAllCellCommentView.m; sourceTree = "<group>"; };
 		00E4AD381DC193A600FAE7C9 /* LDCAllCellCommentView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LDCAllCellCommentView.xib; sourceTree = "<group>"; };
@@ -524,8 +521,8 @@
 		003B704D1DB25AF200F92980 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				00010E831DF197630037471A /* XQCenterTitleBtn.h */,
-				00010E841DF197630037471A /* XQCenterTitleBtn.m */,
+				00E3C0C41DF2C8E100EE0B98 /* LDCCenterTitleBtn.h */,
+				00E3C0C51DF2C8E100EE0B98 /* LDCCenterTitleBtn.m */,
 			);
 			name = View;
 			path = "../../Essence(精华)/View";
@@ -716,11 +713,9 @@
 		003B70631DB25AF200F92980 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				00010E861DF197860037471A /* XQWriteViewController.h */,
-				00010E871DF197860037471A /* XQWriteViewController.m */,
+				00E3C0C71DF2C98900EE0B98 /* LDCWriteViewController.h */,
+				00E3C0C81DF2C98900EE0B98 /* LDCWriteViewController.m */,
 				003B704D1DB25AF200F92980 /* View */,
-				003B70701DB25BD800F92980 /* LDCPublishController.m */,
-				003B706F1DB25BD800F92980 /* LDCPublishController.h */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1003,8 +998,9 @@
 				000006531DC73DFF0083BF5A /* LDCTextController.m in Sources */,
 				0029D46A1DBF72DA0058EA07 /* LDCAllCellTopView.m in Sources */,
 				003B707D1DB25D0400F92980 /* LDCNavigationController.m in Sources */,
-				003B70711DB25BD800F92980 /* LDCPublishController.m in Sources */,
+				00E3C0C91DF2C98900EE0B98 /* LDCWriteViewController.m in Sources */,
 				00C50A221DC4FF3000263F5F /* LDCHeaderRefreshView.m in Sources */,
+				00E3C0C61DF2C8E100EE0B98 /* LDCCenterTitleBtn.m in Sources */,
 				000006541DC73DFF0083BF5A /* LDCVideoController.m in Sources */,
 				00562F2E1DBCE14800347880 /* LDCWebViewController.m in Sources */,
 				009152961DC0EBA90077A590 /* LDCAllCellVideoView.m in Sources */,
@@ -1033,7 +1029,6 @@
 				003D5D9E1DC8CF65003D5D65 /* LDCRecommandCell.m in Sources */,
 				0060E4311DC77DEA00EAEF50 /* UIView+Fetch.m in Sources */,
 				009152911DC0EAB80077A590 /* LDCAllCellVoiceView.m in Sources */,
-				00010E881DF197860037471A /* XQWriteViewController.m in Sources */,
 				003D5D991DC8CB04003D5D65 /* LDCCategoryCell.m in Sources */,
 				00E4AD371DC1937200FAE7C9 /* LDCAllCellCommentView.m in Sources */,
 				000006681DC73E7C0083BF5A /* UIBarButtonItem+Item.m in Sources */,
@@ -1043,7 +1038,6 @@
 				003D5D951DC8C9A4003D5D65 /* LDCRecommandItem.m in Sources */,
 				00F4B7811DB4680D009953A6 /* LDCBackView.m in Sources */,
 				00274E721DB8BD3600701771 /* LDCSubTagItem.m in Sources */,
-				00010E851DF197630037471A /* XQCenterTitleBtn.m in Sources */,
 				00A6845B1DB64C84000F8998 /* LDCAdvertisementController.m in Sources */,
 				005602871DB6763400D3C17A /* LDCSubTagController.m in Sources */,
 				00274E761DB8C13300701771 /* LDCSubTagTableViewCell.m in Sources */,

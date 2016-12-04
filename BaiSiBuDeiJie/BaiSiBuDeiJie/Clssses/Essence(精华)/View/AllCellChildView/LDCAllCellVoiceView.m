@@ -20,41 +20,56 @@
 
 @property (strong, nonatomic) AVPlayer *player;
 @property (strong, nonatomic) NSString *voiceurl;
+@property (strong, nonatomic) UIButton *playButton;
+
 @end
 
 @implementation LDCAllCellVoiceView
 
--(AVPlayer*)player {
+
+- (IBAction)playMusicClick:(UIButton *)sender {
+    
+    if (self.playButton == nil) {
+       self.playButton = sender;
+    }
+    NSLog(@"%d",self.playButton == sender);
+    
+    if (!(self.playButton == sender)) {
+        self.playButton.selected = NO;
+        self.playButton = sender;
+        NSLog(@"不同按钮");
+    }
     
     
+    sender.selected = !sender.isSelected;
+    NSLog(@"按钮---%@",sender);
+    if ([self.voiceurl isEqualToString:self.ldcTopicItem.voiceuri]) {
+        
+//        self.player = nil;
+        NSLog(@"url不同");
+        
+    } else if (![self.voiceurl isEqualToString:self.ldcTopicItem.voiceuri]) {
+        
         NSURL *url = [NSURL URLWithString:self.ldcTopicItem.voiceuri];
-//        self.voiceurl = self.ldcTopicItem.voiceuri;
+        self.voiceurl = self.ldcTopicItem.voiceuri;
         AVPlayerItem *item = [AVPlayerItem playerItemWithURL:url];
         AVPlayer *player = [AVPlayer playerWithPlayerItem:item];
         self.player = player;
+        NSLog(@"创建%@",self.player);
+    }
     
-        return self.player;
     
-}
-- (IBAction)playMusicClick:(UIButton *)sender {
+    if (sender.isSelected == 1) {
+        
+        [self.player play];
+        NSLog(@"播放%@",self.player);
+
+    } else if (sender.isSelected == 0){
     
-    sender.selected = !sender.isSelected;
-    NSLog(@"%d",sender.isSelected);
-//    sender.selected != sender.isSelected;
+        [self.player pause];
+        NSLog(@"暂停%@",self.player);
+    }
     
-    [[UIScrollView alloc]init]
-    
-//    if (sender.selected == YES) {
-//        
-//        [self.player play];
-//    } else {
-//    
-//        [self.player pause];
-//    }
-//    if (self.voiceurl != self.ldcTopicItem.voiceuri) {
-//        
-//        self.player = nil;
-//    }
     
     NSLog(@"音乐播放%@",self.ldcTopicItem.voiceuri);
 //    [self.player play];

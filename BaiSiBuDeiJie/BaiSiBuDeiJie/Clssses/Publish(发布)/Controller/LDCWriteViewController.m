@@ -1,21 +1,21 @@
 //
-//  XQWriteViewController.m
-//  ProticeProJect
+//  LDCWriteViewController.m
+//  BaiSiBuDeiJie
 //
-//  Created by 弓虽_子 on 16/5/19.
-//  Copyright © 2016年 弓虽_子. All rights reserved.
+//  Created by 刘冬城 on 2016/12/3.
+//  Copyright © 2016年 刘冬城. All rights reserved.
 //
 
-#import "XQWriteViewController.h"
-#import "XQCenterTitleBtn.h"
+#import "LDCWriteViewController.h"
+#import "LDCCenterTitleBtn.h"
 
-@interface XQWriteViewController ()
+@interface LDCWriteViewController ()
 
 @property (nonatomic, weak)  UIButton *closeBtn;
 
 @end
 
-@implementation XQWriteViewController
+@implementation LDCWriteViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -32,14 +32,14 @@
     }];
     //把毛玻璃添加到ImageV上
     [self.view addSubview:visualV];
-
-    XQCenterTitleBtn *btn1 = [XQCenterTitleBtn centerTitleBtnWithImageName:@"tabbar_compose_camera" titleName: @"相机"];
-    XQCenterTitleBtn *btn3 = [XQCenterTitleBtn centerTitleBtnWithImageName:@"tabbar_compose_friend" titleName: @"朋友"];
-    XQCenterTitleBtn *btn4 = [XQCenterTitleBtn centerTitleBtnWithImageName:@"tabbar_compose_idea" titleName: @"写段子"];
-    XQCenterTitleBtn *btn6 = [XQCenterTitleBtn centerTitleBtnWithImageName:@"tabbar_compose_music" titleName: @"音乐"];
-    XQCenterTitleBtn *btn7 = [XQCenterTitleBtn centerTitleBtnWithImageName:@"tabbar_compose_photo" titleName: @"照片"];
-    XQCenterTitleBtn *btn9 = [XQCenterTitleBtn centerTitleBtnWithImageName:@"tabbar_compose_more" titleName: @"更多"];
-   
+    
+    LDCCenterTitleBtn *btn1 = [LDCCenterTitleBtn centerTitleBtnWithImageName:@"tabbar_compose_camera" titleName: @"相机"];
+    LDCCenterTitleBtn *btn3 = [LDCCenterTitleBtn centerTitleBtnWithImageName:@"tabbar_compose_friend" titleName: @"朋友"];
+    LDCCenterTitleBtn *btn4 = [LDCCenterTitleBtn centerTitleBtnWithImageName:@"tabbar_compose_idea" titleName: @"写段子"];
+    LDCCenterTitleBtn *btn6 = [LDCCenterTitleBtn centerTitleBtnWithImageName:@"tabbar_compose_music" titleName: @"音乐"];
+    LDCCenterTitleBtn *btn7 = [LDCCenterTitleBtn centerTitleBtnWithImageName:@"tabbar_compose_photo" titleName: @"照片"];
+    LDCCenterTitleBtn *btn9 = [LDCCenterTitleBtn centerTitleBtnWithImageName:@"tabbar_compose_more" titleName: @"更多"];
+    
     NSArray *btnArray = @[btn1,btn3,btn4,btn6,btn7,btn9];
     int coloumn = 3;
     CGFloat btnWH = 120;
@@ -53,7 +53,7 @@
     for (int i = 0; i < btnArray.count; i++) {
         UIButton *btn = btnArray[i];
         btn.tag = i;
-      
+        
         curL = i % coloumn;
         curR = i / coloumn;;
         x = margin + (margin + btnWH) * curL;
@@ -93,7 +93,7 @@
     for (int i = 0; i < self.view.subviews.count; i++) {
         
         UIView *view = self.view.subviews[i];
-        if ([view isKindOfClass:[XQCenterTitleBtn class]]) {
+        if ([view isKindOfClass:[LDCCenterTitleBtn class]]) {
             //把所有按钮从底部移上来,利用清空形变
             //每一个动画添加一个延时时间.
             [UIView animateWithDuration:0.5 delay: i * 0.05 usingSpringWithDamping:0.9 initialSpringVelocity:0 options:UIViewAnimationOptionCurveLinear animations:^{
@@ -103,7 +103,7 @@
         }
     }
     [UIView animateWithDuration:0.25 animations:^{
-       self.closeBtn.transform = CGAffineTransformIdentity;
+        self.closeBtn.transform = CGAffineTransformIdentity;
     }];
 }
 
@@ -114,8 +114,8 @@
     //按钮动画
     for (int i = 0; i < self.view.subviews.count; i++) {
         UIView *view = self.view.subviews[i];
-         NSLog(@"%d",i);
-        if ([view isKindOfClass:[XQCenterTitleBtn class]]) {
+        NSLog(@"%d",i);
+        if ([view isKindOfClass:[LDCCenterTitleBtn class]]) {
             //判断如果是当前点击的按钮, 让按钮这么大
             if (btn == view) {
                 
@@ -168,7 +168,7 @@
     for (int i = 0; i < array.count; i++) {
         
         UIView *view = array[i];
-        if ([view isKindOfClass:[XQCenterTitleBtn class]]) {
+        if ([view isKindOfClass:[LDCCenterTitleBtn class]]) {
             //把所有按钮从底部移上来,利用清空形变
             //每一个动画添加一个延时时间.
             [UIView animateWithDuration:0.5 delay: i * 0.05 usingSpringWithDamping:0.9 initialSpringVelocity:0 options:UIViewAnimationOptionCurveLinear animations:^{
@@ -190,6 +190,5 @@
 //- (void)dealloc {
 //    NSLog(@"%s",__func__);
 //}
-
 
 @end

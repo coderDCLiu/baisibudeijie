@@ -1,16 +1,18 @@
-
-//  Created by 弓虽_子 on 16/5/15.
-//  Copyright © 2016年 弓虽_子. All rights reserved.
+//
+//  LDCCenterTitleBtn.m
+//  BaiSiBuDeiJie
+//
+//  Created by 刘冬城 on 2016/12/3.
+//  Copyright © 2016年 刘冬城. All rights reserved.
 //
 
-#import "XQCenterTitleBtn.h"
+#import "LDCCenterTitleBtn.h"
 
-@implementation XQCenterTitleBtn
-
+@implementation LDCCenterTitleBtn
 
 + (instancetype)centerTitleBtnWithImageName:(NSString *)imageN titleName:(NSString *)title {
     
-    XQCenterTitleBtn *centerBtn =  [[self alloc] init];
+    LDCCenterTitleBtn *centerBtn =  [[self alloc] init];
     centerBtn.imageName = imageN;
     centerBtn.title = title;
     
